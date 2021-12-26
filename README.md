@@ -9,8 +9,28 @@ Last Update: 26 December 2021
 
 Tested with Python in version 3.9.7 on Ubuntu 21.10.
 
+## Prerequisites
+1. Install git and [Python](https://www.python.org/) in version 3.6.0 or higher.
+```bash
+sudo apt install git python
+```
+2. Install the dependencies.
+```bash
+python3 -m pip install -r requirements.txt
+```
+3. Download the project.
+```bash
+git clone git@github.com:rafaelmoczalla/deutschePostStampExtractor.git
+```
+
 ## Usage
-The script requires Python version 3.6.0 or higher. Move the downloaded PDF from [shop.deutschepost.de](shop.deutschepost.de) to the script folder and rename it to `Briefmarke.pdf` The script generates PDF files with name convention `qr<i-th>.pdf` in the same folder. The script was tested with regular stamps. Stamps with additional services like "Einschreiben" may be the limitation of the script.
+The script requires Python version 3.6.0 or higher. Move the downloaded PDF from [shop.deutschepost.de](shop.deutschepost.de) to the script folder and rename it to `Briefmarke.pdf` The script generates PDF files with name convention `qr<i-th>.pdf` in the same folder.
+```bash
+cd <path/to/the/project/folder>
+mv <path/to/the/BriefmarkeXXXX.pdf/file> Briefmarke.pdf
+python3 ./stamp-extractor.py
+```
+The script was tested with regular stamps. Stamps with additional services like "Einschreiben" may be the limitation of the script.
 
 ## License
 [Deutsche Post Stamp Extractor](https://github.com/rafaelmoczalla/deutschePostStampExtractor) (c) by [Rafael Moczalla](rafael.moczalla@gmail.com)
