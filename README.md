@@ -14,13 +14,14 @@ Tested with Python in version 3.9.7 on Ubuntu 21.10.
 ```bash
 sudo apt install git python
 ```
-2. Install the dependencies.
-```bash
-python3 -m pip install -r requirements.txt
-```
-3. Download the project.
+2. Download the project and change directory to the project folder.
 ```bash
 git clone git@github.com:rafaelmoczalla/deutschePostStampExtractor.git
+cd <path/to/the/project/folder>
+```
+3. Install the dependencies.
+```bash
+python3 -m pip install -r requirements.txt
 ```
 
 ## Usage
